@@ -1,0 +1,7 @@
+#!name=Domain Direct
+#!desc=将域名设为直接连接（DIRECT）
+#!category=Rules
+
+[Rule]
+DOMAIN-SUFFIX,codesome.cn,DIRECT
+DOMAIN-SUFFIX,codesome.ai,DIRECT

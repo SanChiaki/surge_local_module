@@ -1,7 +1,15 @@
-#!name=Domain Direct
-#!desc=将域名设为直接连接（DIRECT）
+#!name=Oam's Modules
+#!desc=Oam's Modules
 #!category=Rules
+
+[General]
+tun-excluded-routes = 100.64.0.0/10, 100.100.100.100/32
+
+[Host]
+*.ts.net = server:100.100.100.100
 
 [Rule]
 DOMAIN-SUFFIX,codesome.cn,DIRECT
 DOMAIN-SUFFIX,codesome.ai,DIRECT
+IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+IP-CIDR,100.100.100.100/32,DIRECT,no-resolve
